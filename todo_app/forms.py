@@ -12,6 +12,9 @@ class TaskForm(forms.ModelForm):
                     "type": "date",
                 }
             ),
-            "tags": forms.CheckboxSelectMultiple(attrs={"class": "checkbox-list"}),
+            "tags": forms.CheckboxSelectMultiple(
+                attrs={
+                    "class": "checkbox-list"
+                }
+            ),
         }
-
